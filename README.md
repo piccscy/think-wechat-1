@@ -1,14 +1,13 @@
 # thinkphp-wechat
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fqiqizjl%2Fthink-wechat.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fqiqizjl%2Fthink-wechat?ref=badge_shield)
 
-微信SDK For ThinkPHP 5.1 基于[overtrue/wechat](https://github.com/overtrue/wechat)
+微信SDK For ThinkPHP 6.0 基于[overtrue/wechat](https://github.com/overtrue/wechat)
 
 ## 框架要求
-ThinkPHP5.1(中间件要求支持ThinkPHP5.1.6+)
+ThinkPHP6.0(中间件要求支持ThinkPHP6.0+)
 
 ## 安装
 ~~~
-composer require naixiaoxin/think-wechat 
+composer require rockyhu/think-wechat 
 ~~~
 
 ## 配置
@@ -66,7 +65,7 @@ $officialAccount = Facade::officialAccount('test'); // 公众号
 $officialAccount = Facade::officialAccount('',$config); // 公众号
 ```
 
-### Oauth登录中间件(ThinkPHP5.1.6+)
+### Oauth登录中间件(ThinkPHP6.0+)
 使用中间件情况下，config的oauth.callback可以随便写~，反正是直接获取了当前URL
 ```php
 \think\facade\Route::rule('user','usere')->middleware(\Naixiaoxin\ThinkWechat\Middleware\OauthMiddleware::class);
@@ -75,7 +74,7 @@ $officialAccount = Facade::officialAccount('',$config); // 公众号
 上面的路由定义了 /user 是需要微信授权的，那么在这条路由的回调 或 控制器对应的方法里， 你就可以从 session('wechat_oauth_user_default') 拿到已经授权的用户信息了。
 
 
-关于ThinkPHP5.1的中间件使用方法不在叙述，详情可以查看[官方文档](https://www.kancloud.cn/manual/thinkphp5_1/564279)
+关于ThinkPHP6.0的中间件使用方法不在叙述，详情可以查看[官方文档](https://www.kancloud.cn/manual/thinkphp5_1/564279)
 
 #### 中间件参数说明
 由于ThinkPHP中间件只支持一个参数，所以以`:`做分割
@@ -109,5 +108,3 @@ $params['is_new']; // 是不是新的会话（第一次创建 session 时为 tru
 ## License
 
 MIT
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fqiqizjl%2Fthink-wechat.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fqiqizjl%2Fthink-wechat?ref=badge_large)
