@@ -14,7 +14,7 @@
     }],
     "autoload": {
         "psr-4": {
-            "Naixiaoxin\\ThinkWechat\\": "src/"
+            "Rockyhu\\ThinkWechat\\": "src/"
         },
         "files": [
             "src/helper.php"
