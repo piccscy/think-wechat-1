@@ -1,5 +1,5 @@
 {
-    "name": "rockyhu/think-wechat",
+    "name": "piccscy/tp6-wechat",
     "description": "EasyWechat For Thnkphp6.0+",
     "type": "think-extend",
     "keywords": ["wechat", "weixin","easywechat","thinkphp","think", "sdk"],
@@ -9,12 +9,12 @@
     },
     "license": "MIT",
     "authors": [{
-        "name": "rockyhu",
-        "email": "916772355@qq.com"
+        "name": "sege",
+        "email": "sege@sohu.com"
     }],
     "autoload": {
         "psr-4": {
-            "Rockyhu\\ThinkWechat\\": "src/"
+            "Piccscy\\Tp6Wechat\\": "src/"
         },
         "files": [
             "src/helper.php"
