@@ -6,7 +6,7 @@
  * @copyright 2017-2018 耐小心
  */
 
-namespace Naixiaoxin\ThinkWechat;
+namespace Piccscy\Tp6Wechat;
 
 use Psr\SimpleCache\CacheInterface;
 use think\Cache;
