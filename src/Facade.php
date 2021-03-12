@@ -4,7 +4,7 @@
  * @copyright 2017-2018 耐小心
  */
 
-namespace Naixiaoxin\ThinkWechat;
+namespace Piccscy\Tp6Wechat;
 
 use think\Facade as ThinkFacade;
 
