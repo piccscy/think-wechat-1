@@ -7,7 +7,7 @@ ThinkPHP6.0(中间件要求支持ThinkPHP6.0+)
 
 ## 安装
 ~~~
-composer require rockyhu/think-wechat 
+composer require piccscy/tp6-wechat 
 ~~~
 
 ## 配置
