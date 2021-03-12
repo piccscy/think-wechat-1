@@ -6,7 +6,7 @@
  * @copyright 2017-2018 耐小心
  */
 
-namespace Naixiaoxin\ThinkWechat\Middleware;
+namespace Piccscy\Tp6Wechat\Middleware;
 
 use EasyWeChat\OfficialAccount\Application;
 use think\facade\Hook;
