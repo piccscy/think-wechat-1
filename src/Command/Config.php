@@ -9,7 +9,7 @@
 // | Author: yunwuxin <448901948@qq.com>
 // +----------------------------------------------------------------------
 
-namespace Naixiaoxin\ThinkWechat\Command;
+namespace Piccscy\Tp6Wechat\Command;
 
 use think\console\Command;
 use think\console\Input;
@@ -33,7 +33,7 @@ class Config extends Command
             $output->error('file is exist');
             return;
         }
-        $fileContent = file_get_contents(env('vendor_path') . 'naixiaoxin/think-wechat/src/config.php');
+        $fileContent = file_get_contents(env('vendor_path') . 'piccscy/tp6-wechat/src/config.php');
         file_put_contents(env('config_path') . 'wechat.php', $fileContent);
         $output->info('send success');
         return;
